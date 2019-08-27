@@ -30,7 +30,7 @@ all:
           org: orderer # Organization name
           ansible_host: 157.245.111.99 # Real ip address or domain name of the machine
           ansible_user: brugu  # User with sudo access
-          ansible_private_key_file: ~/home/brugu/.ssh/id_rsa.pub # Private key to identify ourselves
+          ansible_private_key_file: ./privatekeys/id_rsa.pub # Private key to identify ourselves
         # Same structure for any other nodes
         a.example.com:
           node_roles:
@@ -39,7 +39,7 @@ all:
           org: a
           ansible_host: 157.245.109.176
           ansible_user: brugu
-          ansible_private_key_file: ~/home/brugu/.ssh/id_rsa.pub
+          ansible_private_key_file:./privatekeys/id_rsa.pub
 
         b.example.com:
           node_roles:
@@ -47,7 +47,7 @@ all:
           org: b
           ansible_host: 157.245.99.141
           ansible_user: brugu
-          ansible_private_key_file: ~/home/brugu/.ssh/id_rsa.pub
+          ansible_private_key_file: ./privatekeys/id_rsa.pub
 
         c.example.com:
           node_roles:
@@ -55,4 +55,4 @@ all:
           org: c
           ansible_host: 157.245.99.182
           ansible_user: brugu
-          ansible_private_key_file: ~/home/brugu/.ssh/id_rsa.pub
+          ansible_private_key_file: ./privatekeys/id_rsa.pub
