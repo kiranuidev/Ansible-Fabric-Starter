@@ -32,9 +32,9 @@ all:
           org: kafka # Organization name
           zookeeper_id: 0 # ID for zookeeper
           kafka_broker_id: 0 # ID for kafka-broker
-          ansible_host: 172.16.16.1 # Real ip address or domain name of the machine
-          ansible_user: username  # User with sudo access
-          ansible_private_key_file: ~/path-to-private-key # Private key to identify ourselves
+          ansible_host: 157.245.111.99 # Real ip address or domain name of the machine
+          ansible_user: brugu  # User with sudo access
+          ansible_private_key_file: ~/home/brugu/.ssh/id_rsa.pub # Private key to identify ourselves
           ansible_ssh_port: 22 # Specify ssh-port here, if case of it's not defaulted.
         # Same structure for any other nodes
         a.example.com:
@@ -50,9 +50,9 @@ all:
           orderer_id: 0 # ID of orderer-service which is running on this host
           zookeeper_id: 1
           kafka_broker_id: 1
-          ansible_host: 172.16.16.2
-          ansible_user: username
-          ansible_private_key_file: ~/path-to-private-key
+          ansible_host: 157.245.109.176
+          ansible_user: brugu
+          ansible_private_key_file: ~/home/brugu/.ssh/id_rsa.pub
           ansible_ssh_port: 22
         b.example.com:
           node_roles:
@@ -64,9 +64,9 @@ all:
           orderer_id: 1
           zookeeper_id: 2
           kafka_broker_id: 2
-          ansible_host: 172.16.16.3
-          ansible_user: username
-          ansible_private_key_file: ~/path-to-private-key
+          ansible_host: 157.245.99.141
+          ansible_user: brugu
+          ansible_private_key_file: ~/home/brugu/.ssh/id_rsa.pub
           ansible_ssh_port: 22
         c.example.com: # This node will host only kafka-broker and peer.
           node_roles:
@@ -76,7 +76,7 @@ all:
           org: c
           orderer_id: 2
           kafka_broker_id: 3
-          ansible_host: 172.16.16.4
-          ansible_user: username
-          ansible_private_key_file: ~/path-to-private-key
+          ansible_host: 157.245.99.182
+          ansible_user: brugu
+          ansible_private_key_file: ~/home/brugu/.ssh/id_rsa.pub
           ansible_ssh_port: 22
