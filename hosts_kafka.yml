@@ -35,7 +35,7 @@ all:
           ansible_host: 157.245.111.99 # Real ip address or domain name of the machine
           ansible_user: brugu  # User with sudo access
           ansible_private_key_file: ~/.ssh/kirankey.pem # Private key to identify ourselves
-          ##ansible_sudo_pass: brugu@2019
+          ansible_sudo_pass: brugu@2019
           ansible_ssh_port: 22 # Specify ssh-port here, if case of it's not defaulted.
         # Same structure for any other nodes
         a.example.com:

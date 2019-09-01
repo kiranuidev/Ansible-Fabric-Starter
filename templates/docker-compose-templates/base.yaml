@@ -61,8 +61,8 @@ services:
     volumes:
      - {{ fabric_starter_workdir }}/artifacts:/usr/src/artifacts
 # Uncomment this, to map www-client directory to api-server
-#     - {{ fabric_starter_workdir }}/www-client:/usr/src/app/www
-#     - {{ fabric_starter_workdir }}/middleware:/usr/src/app/middleware
+     - {{ fabric_starter_workdir }}/www-client:/usr/src/app/www
+     - {{ fabric_starter_workdir }}/middleware:/usr/src/app/middleware
     command: sh -c "npm start"
 
   www-base:
